@@ -1,0 +1,24 @@
+<div class="p-2">
+  <div class="row">
+    <div class="col-md-5">
+      <canvas #canvas
+              height="400"
+              width="400"
+              class="border"></canvas>
+    </div>
+    <div style="height: 30px;"
+         class="ml-2 col-md-2 border">
+      Score: {{ score }}
+    </div>
+    <div style="height: 30px;"
+         class="ml-2 col-md-2 border"
+         *ngIf="winner">
+      YOU WIN!
+    </div>
+    <div style="height: 30px;"
+         class="ml-2 col-md-2 border"
+         *ngIf="loser">
+      YOU LOSE!
+    </div>
+  </div>
+</div>
