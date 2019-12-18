@@ -1,0 +1,57 @@
+.marble {
+    height: 30px;
+    width: 30px;
+    font-size: small;
+}
+
+.come-from-upside {
+    animation: 1s ease-out 0s 1 fromUpside;
+}
+
+.come-from-under {
+    animation: 1s ease-out 0s 1 fromUnder;
+}
+
+.guide {
+    background-color: lightskyblue;
+}
+
+.first {
+    background-color: #75ff70;
+}
+
+.second {
+    background-color: #69e665;
+}
+
+.third {
+    background-color: #5fcf5b;
+}
+
+.fourth {
+    color: white;
+    background-color: #4fac4c;
+}
+
+.fifth {
+    color: white;
+    background-color: #3e883d;
+}
+
+@keyframes fromUpside {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fromUnder {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}

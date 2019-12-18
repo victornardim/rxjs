@@ -8,12 +8,15 @@ import { UserCardsComponent } from './user-cards/user-cards.component';
 import { PaintBrushComponent } from './paint-brush/paint-brush.component';
 import { EndingCreditsComponent } from './ending-credits/ending-credits.component';
 import { WhackAMoleComponent } from './whack-a-mole/whack-a-mole.component';
+import { MarblesComponent } from './marbles/marbles.component';
 
 const appRoutes: Routes = [
   { path: 'user-cards', component: UserCardsComponent },
   { path: 'paint-brush', component: PaintBrushComponent },
   { path: 'ending-credits', component: EndingCreditsComponent },
-  { path: 'whack-a-mole', component: WhackAMoleComponent }];
+  { path: 'whack-a-mole', component: WhackAMoleComponent },
+  { path: 'marbles', component: MarblesComponent }
+];
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ const appRoutes: Routes = [
     UserCardsComponent,
     PaintBrushComponent,
     EndingCreditsComponent,
-    WhackAMoleComponent
+    WhackAMoleComponent,
+    MarblesComponent
   ],
   imports: [
     BrowserModule,

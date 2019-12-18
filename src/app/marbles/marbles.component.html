@@ -1,0 +1,38 @@
+<div class="p-2">
+
+  Switch
+  <div class="border row p-2 mb-3"
+       style="width: 740px; height: 50px;">
+    <div class="marble rounded-circle border text-center ml-1 pt-1 {{ marble.direction }} {{ marble.order }}"
+         *ngFor="let marble of switchMarbles">
+      {{ marble.value }}
+    </div>
+  </div>
+
+  Merge
+  <div class="border row p-2 mb-3"
+       style="width: 740px; height: 50px;">
+    <div class="marble rounded-circle border text-center ml-1 pt-1 {{ marble.direction }} {{ marble.order }}"
+         *ngFor="let marble of mergeMarbles">
+      {{ marble.value }}
+    </div>
+  </div>
+
+  Concat
+  <div class="border row p-2 mb-3"
+       style="width: 740px; height: 50px;">
+    <div class="marble rounded-circle border text-center ml-1 pt-1 {{ marble.direction }} {{ marble.order }}"
+         *ngFor="let marble of concatMarbles">
+      {{ marble.value }}
+    </div>
+  </div>
+
+  Exhaust
+  <div class="border row p-2"
+       style="width: 740px; height: 50px;">
+    <div class="marble rounded-circle border text-center ml-1 pt-1 {{ marble.direction }} {{ marble.order }}"
+         *ngFor="let marble of exhaustMarbles">
+      {{ marble.value }}
+    </div>
+  </div>
+</div>
